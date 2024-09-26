@@ -1,11 +1,9 @@
 import './styles/App.css'
 
-function App() {
+export default function App() {
   return (
-    <main>
-      <h1>Food</h1>
-    </main>
+    <h1>teste</h1>
   )
 }
 
-export default App
+
