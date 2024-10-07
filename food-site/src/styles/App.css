@@ -1,6 +1,29 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+body {
+    background-color: #f0f0f0; /* Cor de fundo da página */
+    margin: 0; /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+.app {
+    min-height: 100vh; /* Garante que a altura ocupe 100% da tela */
+    display: flex;
+    flex-direction: column; /* Organiza Header, Main e Footer em coluna */
+}
+
+header {
+    background-color: white; /* Fundo do header */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+footer {
+    background-color: white; /* Fundo do footer */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    background-color: transparent; /* Pode ser transparente ou da mesma cor do body */
+    padding: 2rem; /* Espaçamento interno para o conteúdo */
 }

@@ -1,0 +1,107 @@
+.home-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.home-page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.home-page-content {
+  margin-bottom: 30px;
+}
+
+.about,
+.products,
+.contact {
+  margin-bottom: 20px;
+}
+
+.home-page-footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start; /* Alinha a imagem e o texto no topo */
+}
+
+/* Ajustes da imagem do chef */
+.chef-image {
+  width: 450px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilos do carrossel */
+.carousel {
+  position: relative;
+  max-width: 600px; /* Largura máxima do carrossel */
+  margin: auto;
+  overflow: hidden; /* Oculta imagens que estão fora da área visível */
+}
+
+.event-images {
+  display: flex;
+  transition: transform 0.5s ease; /* Transição suave */
+}
+
+.event-images img {
+  width: 100%; /* Imagem ocupa toda a largura do carrossel */
+  display: none; /* Inicialmente oculta as imagens */
+}
+
+.products {
+    text-align: center; /* Centraliza o texto da seção Eventos */
+}
+
+.products h2 {
+    margin-bottom: 20px; /* Espaçamento inferior para o título */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev {
+  left: 10px; /* Posição do botão anterior */
+}
+
+.next {
+  right: 10px; /* Posição do botão próximo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Coloca imagem acima do texto em telas pequenas */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .chef-image {
+    width: 100%; /* A imagem ocupa 100% da largura em telas pequenas */
+    margin-right: 0; /* Remove a margem à direita */
+    margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+  }
+
+  .carousel {
+    max-width: 100%; /* O carrossel ocupa toda a largura disponível */
+  }
+
+  button {
+    padding: 8px; /* Reduz o padding dos botões em telas menores */
+  }
+}

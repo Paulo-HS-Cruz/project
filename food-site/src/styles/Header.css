@@ -1,0 +1,54 @@
+.app-header {
+    background-color: #ccc; /* Cor de fundo */
+    color: rgb(68, 55, 55); /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Para garantir que o footer não sobreponha outros elementos */
+    bottom: 0;
+    width: 100%; /* Para ocupar toda a largura da tela */
+}
+
+.header-content h1 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 2.5em; /* Tamanho do título */
+}
+
+.header-content p {
+    font-size: 1.2em; /* Tamanho da descrição */
+}
+
+/* Estilos da navegação */
+.nav-links {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    display: inline; /* Exibe os itens da lista na mesma linha */
+    margin: 0 15px; /* Espaçamento entre os links */
+}
+
+.nav-links a {
+    color: black; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2em; /* Reduz o tamanho do título em telas menores */
+    }
+    
+    .header-content p {
+        font-size: 1em; /* Reduz o tamanho da descrição em telas menores */
+    }
+
+    .nav-links li {
+        display: block; /* Exibe os itens da lista em bloco (um abaixo do outro) */
+        margin: 10px 0; /* Espaçamento vertical entre os links */
+    }
+}

@@ -1,9 +1,19 @@
-import './styles/App.css'
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import './styles/App.css';
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <h1>teste</h1>
-  )
-}
+    <div className="app">
+      <Header />
+      <main>
+        <HomePage />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-
+export default App;
