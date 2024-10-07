@@ -15,6 +15,9 @@ const Header: React.FC = () => {
               <a href="#events">Eventos</a>
             </li>
             <li>
+              <a href="#midia">Mídia</a>
+            </li>
+            <li>
               <a
                 href="https://www.instagram.com/chefprisciladeus/"
               >

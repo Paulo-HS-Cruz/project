@@ -15,7 +15,7 @@
 }
 
 .about,
-.products,
+.events,
 .contact {
   margin-bottom: 20px;
 }
@@ -56,12 +56,16 @@
   display: none; /* Inicialmente oculta as imagens */
 }
 
-.products {
+.events {
     text-align: center; /* Centraliza o texto da seção Eventos */
 }
 
-.products h2 {
+.events h2 {
     margin-bottom: 20px; /* Espaçamento inferior para o título */
+}
+
+.midia {
+  text-align: center;
 }
 
 button {

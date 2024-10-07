@@ -5,12 +5,13 @@ const HomePage: React.FC = () => {
   const slideIndexRef = useRef(0);
 
   useEffect(() => {
-    const slides = document.querySelectorAll<HTMLImageElement>('.event-images img');
-    
+    const slides =
+      document.querySelectorAll<HTMLImageElement>(".event-images img");
+
     const showSlides = () => {
-      slides.forEach((slide) => (slide.style.display = 'none')); // Esconde todas as imagens
+      slides.forEach((slide) => (slide.style.display = "none")); // Esconde todas as imagens
       slideIndexRef.current = (slideIndexRef.current + 1) % slides.length; // Move para o próximo slide
-      slides[slideIndexRef.current].style.display = 'block'; // Mostra a imagem atual
+      slides[slideIndexRef.current].style.display = "block"; // Mostra a imagem atual
     };
 
     showSlides();
@@ -20,10 +21,12 @@ const HomePage: React.FC = () => {
   }, []);
 
   const moveSlide = (n: number) => {
-    const slides = document.querySelectorAll<HTMLImageElement>('.event-images img');
-    slides[slideIndexRef.current].style.display = 'none'; // Esconde a imagem atual
-    slideIndexRef.current = (slideIndexRef.current + n + slides.length) % slides.length; // Move para a próxima ou anterior
-    slides[slideIndexRef.current].style.display = 'block'; // Mostra a nova imagem
+    const slides =
+      document.querySelectorAll<HTMLImageElement>(".event-images img");
+    slides[slideIndexRef.current].style.display = "none"; // Esconde a imagem atual
+    slideIndexRef.current =
+      (slideIndexRef.current + n + slides.length) % slides.length; // Move para a próxima ou anterior
+    slides[slideIndexRef.current].style.display = "block"; // Mostra a nova imagem
   };
 
   return (
@@ -32,15 +35,20 @@ const HomePage: React.FC = () => {
         <section id="about" className="about">
           <div className="about-content">
             <h1>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis
-              convallis dui, in ullamcorper mi. Vivamus porttitor ante nec
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              quis convallis dui, in ullamcorper mi. Vivamus porttitor ante nec
               vehicula scelerisque. Nam at iaculis erat. Nullam dictum augue in
-              arcu vulputate iaculis. Praesent eros magna, posuere sed egestas ut,
+              arcu vulputate iaculis. Praesent eros magna, posuere sed egestas
+              ut,
             </h1>
-            <img src="/images/chef-priscila.jpg" alt="Chef Priscila Deus" className="chef-image" />
+            <img
+              src="/images/chef-priscila.jpg"
+              alt="Chef Priscila Deus"
+              className="chef-image"
+            />
           </div>
         </section>
-        <section id="events" className="products">
+        <section id="events" className="events">
           <h2>Eventos</h2>
           <div className="carousel">
             <div className="event-images">
@@ -48,8 +56,18 @@ const HomePage: React.FC = () => {
               <img src="/images/event2.jpg" alt="Evento 2" />
               <img src="/images/event3.jpg" alt="Evento 3" />
             </div>
-            <button className="prev" onClick={() => moveSlide(-1)}>&#10094;</button>
-            <button className="next" onClick={() => moveSlide(1)}>&#10095;</button>
+            <button className="prev" onClick={() => moveSlide(-1)}>
+              &#10094;
+            </button>
+            <button className="next" onClick={() => moveSlide(1)}>
+              &#10095;
+            </button>
+          </div>
+        </section>
+        <section id="midia" className="midia">
+          <h2>Mídia</h2>
+          <div>
+
           </div>
         </section>
       </main>
