@@ -66,9 +66,11 @@ const HomePage: React.FC = () => {
         </section>
         <section id="midia" className="midia">
           <h2>Mídia</h2>
-          <div>
-
-          </div>
+          <div></div>
+        </section>
+        <section id="services" className="services">
+          <h2>Serviços</h2>
+          <div></div>
         </section>
       </main>
     </div>

@@ -5,7 +5,19 @@ const Header: React.FC = () => {
   return (
     <header className="app-header">
       <div className="header-content">
-        <h2>Chef Priscila Deus</h2>
+        <div className="logo-container">
+          <div className="text-part">
+            <h2>
+              CHEZ DEUS
+              <img
+                src="icons/chezdeus.png"
+                alt="Logo Chez Deus"
+                className="logo-img"
+              />
+            </h2>
+          </div>
+        </div>
+        <span style={{ fontSize: "20px" }}>Chef Priscila Deus</span>
         <nav>
           <ul className="nav-links">
             <li>
@@ -18,11 +30,10 @@ const Header: React.FC = () => {
               <a href="#midia">Mídia</a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/chefprisciladeus/"
-              >
-                Contato
-              </a>
+              <a href="https://www.instagram.com/chefprisciladeus/">Contato</a>
+            </li>
+            <li>
+              <a href="services">Serviços</a>
             </li>
           </ul>
         </nav>

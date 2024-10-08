@@ -68,6 +68,14 @@
   text-align: center;
 }
 
+.services {
+  text-align: center; /* Centraliza o texto da seção Eventos */
+}
+
+.services h2 {
+  margin-bottom: 20px; /* Espaçamento inferior para o título */
+}
+
 button {
   position: absolute;
   top: 50%;
