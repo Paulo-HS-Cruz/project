@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
           </div>
         </section>
         <section id="midia" className="midia">
-          <h2>Mídia</h2>
+          <h2>Midia</h2>
           <div></div>
         </section>
         <section id="services" className="services">

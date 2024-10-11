@@ -1,89 +1,92 @@
 .app-header {
-    background-color: rgb(0, 118, 97); /* Cor de fundo */
-    color: rgb(176, 125, 55); /* Cor do texto */
-    padding: 20px;
-    text-align: center;
-    position: relative; /* Para garantir que o footer não sobreponha outros elementos */
-    width: 100%; /* Para ocupar toda a largura da tela */
+  background-color: #007661; /* Cor de fundo */
+  color: #b07d37; /* Cor do texto */
+  padding: 0px;
+  text-align: center;
+  position: relative; /* Para garantir que o footer não sobreponha outros elementos */
+  width: 100%; /* Para ocupar toda a largura da tela */
+  font-family: "Asul", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header-content p {
+  font-size: 1.2em; /* Tamanho da descrição */
+}
+
+.logo-container {
+  display: flex; /* Permite alinhar texto e logo em linha */
+  align-items: center; /* Alinha verticalmente os itens */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-bottom: 0px; /* Espaço abaixo do logo para separá-lo do conteúdo */
+}
+
+.logo-img {
+  margin-left: 10px; /* Adiciona espaço à esquerda do logo */
+  margin-top: 10px;
+  width: 55px; /* Tamanho do logo */
+  height: auto; /* Mantém a proporção */
+}
+
+h3 {
+  margin: 0; /* Remove margens padrão */
+  font-size: 1.25em; /* Tamanho do "CHEZ" */
+}
+
+h2 {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding que pode estar causando espaçamento */
+  font-size: 2.5em; /* Aumenta o tamanho do "DEUS" */
+  line-height: 1; /* Ajusta a altura da linha para evitar espaçamento extra */
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column; /* Empilha "CHEZ" sobre "DEUS" */
+  align-items: center; /* Centraliza os itens no eixo horizontal */
+}
+
+/* Estilos da navegação */
+.nav-links {
+  list-style: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove padding */
+  display: flex; /* Alinha os itens da navegação em linha */
+  justify-content: center; /* Centraliza os links */
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Espaçamento entre os links */
+}
+
+.nav-links a {
+  color: #b07d37; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado */
+  font-family: "IM Fell French Canon", serif;
+  font-size: 20px; /* Tamanho da fonte dos links */
+  font-style: italic;
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-content h2 {
+    font-size: 2em; /* Reduz o tamanho do título em telas menores */
   }
-  
+
   .header-content p {
-    font-size: 1.2em; /* Tamanho da descrição */
+    font-size: 1em; /* Reduz o tamanho da descrição em telas menores */
   }
-  
-  .logo-container {
-    display: flex; /* Permite alinhar texto e logo em linha */
-    align-items: center; /* Alinha verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-bottom: 10px; /* Espaço abaixo do logo para separá-lo do conteúdo */
-  }
-  
-  .logo-img {
-    margin-left: 10px; /* Adiciona espaço à esquerda do logo */
-    width: 55px; /* Tamanho do logo */
-    height: auto; /* Mantém a proporção */
-  }
-  
-  h3 {
-    margin: 0; /* Remove margens padrão */
-    font-size: 1.25em; /* Tamanho do "CHEZ" */
-  }
-  
-  h2 {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding que pode estar causando espaçamento */
-    font-size: 2.5em; /* Aumenta o tamanho do "DEUS" */
-    line-height: 1; /* Ajusta a altura da linha para evitar espaçamento extra */
-  }
-  
-  .text-part {
-    display: flex;
-    flex-direction: column; /* Empilha "CHEZ" sobre "DEUS" */
-    align-items: center; /* Centraliza os itens no eixo horizontal */
-  }
-  
-  /* Estilos da navegação */
+
   .nav-links {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove padding */
-    display: flex; /* Alinha os itens da navegação em linha */
-    justify-content: center; /* Centraliza os links */
-    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    flex-direction: row; /* Alinha os links em linha em telas pequenas */
+    align-items: center; /* Centraliza os itens na linha */
+    justify-content: space-between;
   }
-  
-  .nav-links li {
-    margin: 0 15px; /* Espaçamento entre os links */
-  }
-  
   .nav-links a {
-    color: rgb(176, 125, 55); /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
-    font-family: "Caveat", cursive;
-    font-size: 20px; /* Tamanho da fonte dos links */
-    font-style: normal;
+    font-size: small;
   }
-  
-  .nav-links a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .header-content h2 {
-      font-size: 2em; /* Reduz o tamanho do título em telas menores */
-    }
-  
-    .header-content p {
-      font-size: 1em; /* Reduz o tamanho da descrição em telas menores */
-    }
-  
-    .nav-links {
-      flex-direction: column; /* Alinha os links em coluna em telas pequenas */
-      align-items: center; /* Centraliza os itens na coluna */
-    }
-  
-    .nav-links li {
-      margin: 10px 0; /* Espaçamento vertical entre os links */
-    }
-  }
-  
+}

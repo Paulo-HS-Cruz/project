@@ -1,13 +1,16 @@
 .home-page {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 05px;
   max-width: 800px;
   margin: auto;
+  font-family: "Martel", serif; /* Remover a duplicação da declaração da fonte */
+  font-weight: 400;
+  font-style: normal;
 }
 
-.home-page-header {
-  text-align: center;
-  margin-bottom: 30px;
+#root {
+  background-color: #e5f1ef !important;
+  max-width: 100%;
 }
 
 .home-page-content {
@@ -20,12 +23,7 @@
   margin-bottom: 20px;
 }
 
-.home-page-footer {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid #ccc;
-}
-
+/* Centraliza o conteúdo e aplica fonte padrão */
 .about-content {
   display: flex;
   align-items: flex-start; /* Alinha a imagem e o texto no topo */
@@ -56,24 +54,35 @@
   display: none; /* Inicialmente oculta as imagens */
 }
 
+/* Centraliza e padroniza fonte para eventos */
 .events {
-    text-align: center; /* Centraliza o texto da seção Eventos */
+  text-align: center; /* Centraliza o texto da seção Eventos */
+  font-family: "Martel", serif; /* Padroniza a fonte */
 }
 
 .events h2 {
-    margin-bottom: 20px; /* Espaçamento inferior para o título */
+  margin-bottom: 20px; /* Espaçamento inferior para o título */
+  font-size: 1.5rem; /* Tamanho do título dos eventos */
 }
 
 .midia {
   text-align: center;
+  font-family: "Martel", serif; /* Adiciona a fonte padrão aqui */
+}
+
+.midia h2 {
+  margin-bottom: 20px; /* Espaçamento inferior para o título */
+  font-size: 1.5rem; /* Tamanho do título dos eventos */
 }
 
 .services {
-  text-align: center; /* Centraliza o texto da seção Eventos */
+  text-align: center; /* Centraliza o texto da seção Serviços */
+  font-family: "Martel", serif; /* Padroniza a fonte */
 }
 
 .services h2 {
   margin-bottom: 20px; /* Espaçamento inferior para o título */
+  font-size: 1.5rem; /* Tamanho do título dos serviços */
 }
 
 button {
@@ -107,6 +116,15 @@ button {
     width: 100%; /* A imagem ocupa 100% da largura em telas pequenas */
     margin-right: 0; /* Remove a margem à direita */
     margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+  }
+
+  .events, .services {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para seções em telas menores */
+  }
+
+  .about-content p { /* Ajusta o tamanho do texto específico da seção About */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas, se necessário */
   }
 
   .carousel {

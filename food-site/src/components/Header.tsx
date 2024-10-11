@@ -30,10 +30,15 @@ const Header: React.FC = () => {
               <a href="#midia">Mídia</a>
             </li>
             <li>
-              <a href="https://www.instagram.com/chefprisciladeus/">Contato</a>
+              <a href="#services">Serviços</a>
             </li>
             <li>
-              <a href="services">Serviços</a>
+              <a
+                href="https://www.instagram.com/chefprisciladeus/"
+                target="_blank"
+              >
+                Contato
+              </a>
             </li>
           </ul>
         </nav>

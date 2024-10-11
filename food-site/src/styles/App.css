@@ -2,13 +2,14 @@
 body {
     background-color: #f0f0f0; /* Cor de fundo da página */
     margin: 0; /* Remove a margem padrão do body */
-    font-family: Arial, sans-serif; /* Fonte padrão */
+    max-width: 100%;
 }
 
 .app {
     min-height: 100vh; /* Garante que a altura ocupe 100% da tela */
     display: flex;
     flex-direction: column; /* Organiza Header, Main e Footer em coluna */
+    max-width: 100%;
 }
 
 header {
